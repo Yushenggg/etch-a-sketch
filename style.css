@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body{
+    background-color:antiquewhite ;
+}
+.center{
+    text-align: center;
+    margin:0 auto;
+}
+h1 {    
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: bold;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+}
+.control{
+    display: flex;
+    
+}
+.canvas{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.canvas-col{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    background-color: white;
+}
+.canvas-row{
+    flex:1;
+    background-color: white;
+}
+.tile{
+    border: 1px solid rgb(189, 189, 189);
+    box-sizing: border-box;
+}
+.tile:hover{
+
+    background-color: rgb(189, 189, 189) ;
+    
+}
