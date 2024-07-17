@@ -14,10 +14,28 @@
         <h1>Sprite Creator</h1>
       </div>
       <div class="content">
-        <div class="canvas">
+        <div id="canvas" draggable="false">
 
         </div>
-        <div class="control"></div>
+        <div class="control">
+          <div class="controller">
+            <span></span>
+            <button id="clearBtn">Clear</button>
+            <button id="toggleBorder" class="toggle-true">Border</button>
+            <span></span>
+          </div>
+          <div class="controller">
+            <span></span>
+            <label for="inkColor"><h3>Color</h3></label>
+            <input type="color" id="inkColor" value="#000000">
+            <span></span>
+          </div>
+          <div class="controller">
+            <span></span>
+            <button id="toggleEraser" class="toggle-false">Eraser</button>
+            <span></span>
+          </div>
+        </div>
       </div>
     </div>
   </body>
