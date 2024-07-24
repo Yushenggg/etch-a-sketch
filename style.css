@@ -4,6 +4,7 @@ body{
     background-color:rgb(116, 134, 161) ;
     font-family: "Chakra Petch", sans-serif;
     cursor: default;
+    margin: 0;
 }
 .center{
     text-align: center;
@@ -125,4 +126,21 @@ h1,h2,h3,h4{
 #sizeBtn .selected{
     background-color: rgb(75, 125, 190);
     border-color: rgb(75, 75, 75);
+}
+
+.footer{
+    max-width: none;
+    background-color: #2F6690;
+    font-family: "Chakra Petch", sans-serif;
+    text-align: center;
+    padding: 6px 0;
+    margin:0;
+    position:fixed;
+    width: 100%;
+    bottom: 0;
+
+}
+.footer a{
+    text-decoration: none;
+    
 }
