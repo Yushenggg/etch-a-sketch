@@ -11,13 +11,24 @@
   <body>
     <div class="center">
       <div class="header">
-        <h1>Sprite Creator</h1>
+        <h1>Etch-a-sketch</h1>
       </div>
       <div class="content">
-        <div id="canvas" draggable="false">
-
-        </div>
+        <div id="canvas" draggable="false"></div>
         <div class="control">
+          <div class="controller col">
+            <span></span>
+            <label for="newCanvas"><h3>Canvas Size</h3></label>
+            <div id="sizeBtn">
+              <button class="startBtn" value=8>8</button>
+              <button value=16>16</button>
+              <button class="selected" value=32>32</button>
+              <button value=64>64</button>
+              <button class="endBtn" value=128>128</button>
+            </div>
+            <button id="newCanvas">Create Canvas</button>
+            <span></span>
+          </div>
           <div class="controller">
             <span></span>
             <button id="clearBtn">Clear</button>
@@ -32,10 +43,17 @@
           </div>
           <div class="controller">
             <span></span>
+            <button id="toggleRainbow" class="toggle-false">Rainbow</button>
+            <span></span>
+          </div>
+          <div class="controller">
+            <span></span>
             <button id="toggleEraser" class="toggle-false">Eraser</button>
             <span></span>
           </div>
-        </div>
+          </div>
+
+ 
       </div>
     </div>
   </body>

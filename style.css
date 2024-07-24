@@ -1,31 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 body{
-    background-color:antiquewhite ;
+    background-color:rgb(116, 134, 161) ;
     font-family: "Chakra Petch", sans-serif;
-
+    cursor: default;
 }
 .center{
     text-align: center;
     margin:0 auto;
+    width: 1200px;
 }
 h1,h2,h3,h4{    
     font-weight: bold;
 }
 .content{
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     justify-content: baseline;
     align-items: center;
+
 }
-.control{
-    display: flex;
-    
-}
+
 #canvas{
-    width: 600px;
-    height: 600px;
+    width: 800px;
+    height: 800px;
     display: flex;
+
     flex-direction: column;
     background-color: white;
     margin: 20px;
@@ -44,25 +44,27 @@ h1,h2,h3,h4{
 }
 .tile{
     box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.2s;
 }
 .border{
-    border: 1px solid rgb(189, 189, 189);
+    border: 1px solid rgba(189, 189, 189,0.9);
 }
 .tile:hover{
-    background-color: rgb(189, 189, 189) !important;
-    cursor: pointer;
+    background-color: rgba(189, 189, 189,0.9) !important;
+    transition: 0s;
 }
 
 .control{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    width: 70%;
+    flex: 1;
 }
 .controller{
     flex: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap:8px;
     justify-content: space-around;
     align-items: center;
@@ -71,7 +73,7 @@ h1,h2,h3,h4{
     flex: 1;
 }
 
-.controller button{
+.control button{
     flex: 1;
     background-color: rgb(0, 86, 199);
     font-family: "Chakra Petch", sans-serif;
@@ -81,6 +83,7 @@ h1,h2,h3,h4{
     border: black solid 5px;
     border-radius: 12px;
     padding: 6px 15px;
+    cursor: inherit;
     
 
 }
@@ -94,4 +97,32 @@ h1,h2,h3,h4{
 }
 .controller .toggle-false{
     opacity: 50%;;
+}
+.col{
+    flex-direction: column;
+}
+#sizeBtn{
+    display: flex;
+}
+#sizeBtn button{
+    border-left: black solid 2px;
+    border-right: 0;
+    border-radius: 0;
+    gap: 0;
+}
+#sizeBtn button:hover{
+    background-color: rgb(75, 125, 190);
+    border-color: rgb(75, 75, 75);
+}
+#sizeBtn .startBtn{
+    border-left: black solid 5px;
+    border-radius: 12px 0 0 12px;
+}
+#sizeBtn .endBtn{
+    border-right: black solid 5px;
+    border-radius: 0 12px 12px 0;
+}
+#sizeBtn .selected{
+    background-color: rgb(75, 125, 190);
+    border-color: rgb(75, 75, 75);
 }
